@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <artifactId>mobiera-commons</artifactId>
+   <groupId>com.mobiera.commons</groupId>
+   <version>1.0.6</version>
+   <packaging>jar</packaging>
+   <name>Mobiera Commons</name>
+   <description>A set of java classes used by Mobiera software</description>
+   <url>https://github.com/mobiera/mobiera-commons</url>
+   <licenses>
+      <license>
+         <name>The Apache License, Version 2.0</name>
+         <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      </license>
+   </licenses>
+   <developers>
+      <developer>
+         <name>Fabrice Rochette</name>
+         <email>f.rochette@mobiera.com</email>
+         <organization>Mobiera</organization>
+         <organizationUrl>https://www.mobiera.com</organizationUrl>
+      </developer>
+   </developers>
+   <scm>
+      <connection>scm:git:git://github.com:mobiera/mobiera-commons.git</connection>
+      <developerConnection>scm:git:ssh://github.com:mobiera/mobiera-commons.git</developerConnection>
+      <url>https://github.com/mobiera/mobiera-commons/tree/main</url>
+   </scm>
+   <dependencies>
+      <dependency>
+         <groupId>org.jboss.logging</groupId>
+         <artifactId>jboss-logging</artifactId>
+         <version>3.3.2.Final</version>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>commons-beanutils</groupId>
+         <artifactId>commons-beanutils</artifactId>
+         <version>1.9.4</version>
+      </dependency>
+      <dependency>
+         <groupId>com.fasterxml.jackson.core</groupId>
+         <artifactId>jackson-core</artifactId>
+         <version>2.9.1</version>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>com.fasterxml.jackson.core</groupId>
+         <artifactId>jackson-databind</artifactId>
+         <version>2.9.1</version>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
+   <build>
+      <finalName>${project.artifactId}</finalName>
+      <plugins>
+         <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.3</version>
+            <configuration>
+               <source>1.8</source>
+               <target>1.8</target>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+</project>
